@@ -105,7 +105,12 @@ const UserList = (users: { data: IUser[]; order: SortOrder; sort: string }) => {
           })}
         </div>
       </div>
-      {!loading ? <ImageFollow list={data} active={active} /> : null}
+      {!data.length ? (
+        <h1 className={cn(styles.notFound)}>Users not found</h1>
+      ) : null}
+      {!loading && data.length ? (
+        <ImageFollow list={data} active={active} />
+      ) : null}
     </>
   );
 };

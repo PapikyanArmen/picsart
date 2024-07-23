@@ -29,7 +29,7 @@ export default async function Page({
 }) {
   const user = await getUser(slug); // Await the promise here to get the resolved data
   if (!user) {
-    return <h1>Not found</h1>; // Render the NotFound component if user is not found
+    return <h1 style={{ textAlign: "center" }}>Page Not found</h1>; // Render the NotFound component if user is not found
   }
   return (
     <Suspense>

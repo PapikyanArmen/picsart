@@ -1,8 +1,9 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { getUsers } from "@/api";
-import Users from "@/app/containers/users/Users";
+const Users = dynamic(() => import("@/app/containers/users/Users"));
 import { SearchParams } from "@/app/types";
 import { Metadata } from "next";
+import dynamic from "next/dynamic";
 export const metadata: Metadata = {
   title: "User List",
   description: "User List desc",
@@ -29,14 +30,16 @@ const Page = async ({ searchParams }: { searchParams: SearchParams }) => {
     first_name_like: first_name_like,
   });
   return (
-    <Users
-      data={data}
-      currentPage={page}
-      limit={limit}
-      sort={sort}
-      order={order}
-      first_name_like={first_name_like}
-    />
+    <Suspense>
+      <Users
+        data={data}
+        currentPage={page}
+        limit={limit}
+        sort={sort}
+        order={order}
+        first_name_like={first_name_like}
+      />
+    </Suspense>
   );
 };
 

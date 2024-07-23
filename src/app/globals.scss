@@ -102,6 +102,9 @@ body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-start-rgb));
   cursor: none !important;
+  @media (max-width: 1100px) {
+    cursor: default !important;
+  }
 }
 
 a {

@@ -120,6 +120,10 @@
     display: none;
   }
 }
+.notFound {
+  width: 100%;
+  text-align: center;
+}
 @keyframes load{
   0%, 100%{
     background-position: right;

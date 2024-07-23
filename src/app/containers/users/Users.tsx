@@ -61,7 +61,6 @@ const Users = ({
     isFirstRender.current = true;
     setFilter(inputValue);
   };
-
   return (
     <main className={cn("container")}>
       <TextInput value={filter} onChange={handleInputChange} />
