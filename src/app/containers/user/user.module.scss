@@ -1,0 +1,52 @@
+.image {
+  width: 50%;
+  padding-top: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+  margin-left: auto;
+  @media (max-width: 768px) {
+    order: 1;
+  }
+  @media (max-width: 575px) {
+    width: 100%;
+    padding-top: 100%;
+    margin-top: 2.5rem;
+  }
+}
+.wrapper {
+  display: flex;
+  gap: 1.5rem;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+.inf {
+  width: 50%;
+  margin-top: 5rem;
+  @media (max-width: 768px) {
+    width: 100%;
+    order: 2;
+    margin-top: 2.5rem;
+  }
+  &_name {
+    font-size: 5rem;
+    text-transform: uppercase;
+  }
+  &_detail {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+}
+.back {
+  display: inline-flex;
+  cursor: pointer;
+  svg {
+    width: 2rem;
+    height: 2rem;
+    path {
+      fill:rgb(var(--foreground-rgb)) ;
+    }
+  }
+}

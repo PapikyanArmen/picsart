@@ -1,0 +1,20 @@
+.wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: 0.2rem;
+  cursor: pointer;
+}
+.icon {
+  width: 2rem;
+  height: 2rem;
+  &_asc {
+    transform: rotate(180deg);
+  }
+  &_desc {
+
+  }
+  &_def path{
+    fill: rgb(var(--foreground-rgb)) !important;
+  }
+}

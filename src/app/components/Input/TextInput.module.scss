@@ -1,0 +1,12 @@
+.label {
+  input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(var(--foreground-rgb));
+    width: 20rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    color:rgb(var(--foreground-rgb));
+    background-color: rgb(var(--background-start-rgb));
+  }
+}

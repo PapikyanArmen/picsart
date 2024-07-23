@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+  gap: 3rem;
+  @media (max-width: 1100px) {
+    flex-direction: column;
+  }
+}
+.comments ,.notes {
+  width: 50%;
+  @media (max-width: 1100px) {
+    width: 100%;
+  }
+}

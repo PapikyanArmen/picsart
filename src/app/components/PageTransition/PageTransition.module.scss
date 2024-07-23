@@ -1,0 +1,31 @@
+.frame {
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  background-color: rgb(var(--foreground-rgb));
+  width: 50vw;
+  top: 0;
+  &_second{
+    left: 50vw;
+  }
+}
+.pattern {
+  position: fixed;
+  z-index: 1001;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  color: rgb(var(--foreground-rgb));
+  mix-blend-mode: difference;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  top: 0;
+  background-color: rgb(var(--background-start-rgb));
+  h1 {
+    font-size: 10rem;
+    @media  (max-width: 812px){
+      font-size: 5rem;
+    }
+  }
+}

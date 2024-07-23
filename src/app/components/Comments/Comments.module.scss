@@ -1,0 +1,26 @@
+.wrapper {
+
+}
+.item {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(var(--foreground-rgb));
+  padding-bottom: 1rem;
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+    transition: 300ms ease-in-out;
+    //&:hover {
+    //  transform: scale(1.2);
+    //}
+  }
+  &_list {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
